@@ -1,10 +1,12 @@
 def line(array)
   string = "The line is currently: "
+  count = 0
  if array == []
    puts "The line is currently empty."
  else
     array.each_with_index do |el,index|
-      string << "#{index + 1}. #{el} "
+      string << "#{index + 1}. #{el}"
+      string << " " if index + 1 < array.size
     end
     puts string
  end
