@@ -18,6 +18,7 @@ def take_a_number(array, new_customer)
 end
 
 def now_serving(array)
-  line(array)
+  puts "There is nobody waiting to be served!" if array == []
+  
   
 end
